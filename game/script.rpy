@@ -7,8 +7,11 @@ define Grob = Character("Grob")
 
 label start:
     "snak snak snak"
-    Gorb "yoyo alt bra?"
+    Grob "yoyo alt bra?"
+
     Grob "giga test Grob test hei på deg test etter rart merke"
+
+    return
 
 # label sprites:
 #     Grob "but wait haha"
@@ -51,4 +54,3 @@ label start:
 #     Grob "Be gone"
 #     else:
 #     Grob "Dont desturb me!"
-#     return
