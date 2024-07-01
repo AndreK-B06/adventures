@@ -1,3 +1,2 @@
-# logs
-log.tex*
-error.txt*
+# Ignore all .txt files
+*.txt
