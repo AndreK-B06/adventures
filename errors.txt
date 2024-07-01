@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 50: if statement expects a non-empty block.
+    if obidiant:
+                ^
+
+File "game/script.rpy", line 52: expected statement.
+    else:
+        ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Mon Jul  1 09:53:09 2024
