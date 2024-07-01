@@ -6,7 +6,12 @@
 define Grob = Character("Grob")
 
 label start:
+
+    scene bg park1
+
     "snak snak snak"
+
+    show male Sprite
     Grob "yoyo alt bra?"
 
     Grob "giga test Grob test hei på deg test etter rart merke"
