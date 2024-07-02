@@ -25,7 +25,7 @@ label start:
     
     player "Right, it was %(player_name)s."
     
-    show male Sprite
+    show male blond
     Ethan "Are you lost?"
 
     player "I am new her"
