@@ -2,6 +2,8 @@
 # name of the character.
 
 define Grob = Character("Grob")
+define Emma = Character("Emma")
+define Daniel = Character("Daniel")
 # Offis
 define Ava = Character("Ava")
 define Ethan = Character("Ethan")
@@ -10,7 +12,7 @@ label start:
 
     scene bg park1
 
-    Ethan "You got a name?"
+    "You" "Wat was my name agen?"
 
     $ player_name  = renpy.input("wats your name?")
 
@@ -20,7 +22,9 @@ label start:
         $player_name="John"
 
     $ player = Character(player_name)
-
+    
+    "Right it was %(player_name)"
+    
     show male Sprite
     Ethan "Are you lost?"
 
