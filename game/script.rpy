@@ -23,7 +23,7 @@ label start:
 
     $ player = Character(player_name)
     
-    "Right it was %(player_name)"
+    player "Right, it was %(player_name)s."
     
     show male Sprite
     Ethan "Are you lost?"
