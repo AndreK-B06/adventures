@@ -10,7 +10,7 @@ label start:
 
     scene bg park1
 
-    Grob "You got a name?"
+    Ethan "You got a name?"
 
     $ player_name  = renpy.input("wats your name?")
 
@@ -22,10 +22,10 @@ label start:
     $ player = Character(player_name)
 
     show male Sprite
-    Grob "Are you lost?"
+    Ethan "Are you lost?"
 
     player "I am new her"
 
-    Grob "new blood?"
+    Ethan "new blood?"
 
     return
