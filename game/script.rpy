@@ -1,15 +1,16 @@
-# The script of the game goes in this file.
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 define Grob = Character("Grob")
+# Offis
+define Ava = Character("Ava")
+define Ethan = Character("Ethan")
 
 label start:
 
     scene bg park1
 
-    "You got a name?"
+    Grob "You got a name?"
 
     $ player_name  = renpy.input("wats your name?")
 
@@ -21,10 +22,10 @@ label start:
     $ player = Character(player_name)
 
     show male Sprite
-    Grob "yoyo alt bra?"
+    Grob "Are you lost?"
 
-    player "jada"
+    player "I am new her"
 
-    Grob "Lol"
+    Grob "new blood?"
 
     return
