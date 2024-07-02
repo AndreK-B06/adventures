@@ -10,7 +10,7 @@ define Ethan = Character("Ethan")
 
 label start:
 
-    scene bg park1
+    scene bg park
 
     "You" "Wat was my name agen?"
 
