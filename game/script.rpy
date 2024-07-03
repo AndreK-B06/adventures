@@ -25,18 +25,17 @@ label start:
 
     player "Right, it was %(player_name)s."
 
-    "Choose your coworker"
+    "Do you prefer men or Men or women?"
 menu:
-        "Ava":
+        "Women":
             $ coworker = Ava
             $ fcoworker = True
 
-        "Ethan":
+        "Men":
             $ coworker = Ethan
             $ mcoworker = True
 
         "Non":
-            $ coworker = Ethan
             $ ncoworker = True
             jump end
 
@@ -44,12 +43,10 @@ label office:
 
     scene bg offis
 
-    if fcoworker:
+    if fcoworker == True:
         show male blond
-    if mcoworker:
-        show male blond1
     else:
-        jump end
+        show male blond1
 
     coworker "Are you lost?"
 
