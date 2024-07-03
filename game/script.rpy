@@ -30,13 +30,14 @@ menu:
         "Women":
             $ coworker = Ava
             $ fcoworker = True
+            jump office
 
         "Men":
             $ coworker = Ethan
-            $ mcoworker = True
+            $ fcoworker = False
+            jump office
 
         "Non":
-            $ ncoworker = True
             jump end
 
 label office:
@@ -45,7 +46,7 @@ label office:
 
     if fcoworker == True:
         show male blond
-    else:
+    elif fcoworker == False:
         show male blond1
 
     coworker "Are you lost?"
