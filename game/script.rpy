@@ -45,9 +45,9 @@ label office:
     scene bg offis
 
     if fcoworker == True:
-        show woman brumet passiv
+        show woman office brunet  passiv
     elif fcoworker == False:
-        show male blond1
+        show male office silver passiv
 
     coworker "Are you lost?"
 
