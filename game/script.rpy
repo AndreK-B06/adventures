@@ -45,7 +45,7 @@ label office:
     scene bg offis
 
     if fcoworker == True:
-        show male blond
+        show woman brumet passiv
     elif fcoworker == False:
         show male blond1
 
