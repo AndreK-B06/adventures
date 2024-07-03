@@ -30,12 +30,10 @@ menu:
         "Ava":
             $ coworker = Ava
             $ fcoworker = True
-            jump office
 
         "Ethan":
             $ coworker = Ethan
             $ mcoworker = True
-            jump office
 
         "Non":
             $ coworker = Ethan
@@ -48,8 +46,8 @@ label office:
 
     if fcoworker:
         show male blond
-    if:
-        show Male
+    if mcoworker:
+        show male blond1
     else:
         jump end
 
