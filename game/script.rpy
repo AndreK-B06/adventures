@@ -79,9 +79,15 @@ label office:
 
     coworker "See you around the office!"
 # not speld checed
-    "You continu your frist day inthe offes"
+    "You continue your first day in the office."
+
+    "After hours, you finish your first day and take your leave."
 
 label street:
+
+    scene bg caffestreet
+
+    "You walk through the street after a long first day."
 
 label end:
 
