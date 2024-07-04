@@ -78,6 +78,10 @@ label office:
     player "Nice meeting you too, %(coworker)s."
 
     coworker "See you around the office!"
+# not speld checed
+    "You continu your frist day inthe offes"
+
+label street:
 
 label end:
 
