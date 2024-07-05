@@ -154,7 +154,7 @@ label caffe_love_path:
     scene bg catecoffe
 
     if fcoworker == True:
-        show woman catcaffe pink smug
+        show woman catcaffe pink passiv
     elif fcoworker == False:
         show male catcaffe blond eyesclosed
 # ? Working on
@@ -163,29 +163,54 @@ label caffe_love_path:
 
     "Dey nods and start prepering your coffee"
 
-    player "How is it working in a Cat caffe?"
+    player "How is it to working in a Cat caffe?"
 
-    "Dey turn intusiastik back to you"
+    "Dey turn instentli back to you"
 
-    coffeeworker "Its funn, i get to se vats all day and after work i can play whid dem"
+    coffeeworker "Its funn, i get to se cats all day, and after work i can play whid dem"
 
     coffeeworker "Somtim its sad when som people adopt cats from her doh"
 
     "Dey lok sad as dey sey so"
 
+    player "ahh i se. whel atlis dey have a nice ant cute person her whit dem"
+
+    "Toy say whit a smile"
+
     if fcoffeeworker == True:
         coffeeworker "Hey handsome wana hang out after my shift?"
     else:
-        coffeeworker "*Hey cuti wana hang out ater my shift?"
+        coffeeworker "Hey cuti wana hang out afer my shift?"
+
+menu:
+    "Yes":
+        jump caffe_love_path_yes
+    "no":
+        jump caffe_love_path_no
 
 label caffe_love_path_yes:
 
     scene bg catecoffe
 
     if fcoworker == True:
-        show woman catcaffe pink smug
+        show woman catcaffe pink suprist
     elif fcoworker == False:
-        show male catcaffe blond eyesclosed
+        show male catcaffe blond suprist
+
+    coffeeworker "Whel se you after work then <3"
+
+    jump end
+
+label caffe_love_path_no:
+
+    scene bg catecoffe
+
+        if fcoworker == True:
+        show woman catcaffe pink crying
+    elif fcoworker == False:
+        show male catcaffe blond sad
+
+    coffeeworker "Ah i se, sorry for asking. It was cinda werd i gess and out of nowher hehe"
 
     jump end
 
