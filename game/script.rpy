@@ -175,9 +175,10 @@ label caffe_love_path:
 
     player "ahh i se. whel atlis dey have a nice ant cute person her whit dem"
 
-    "Toy say whit a smile"
+    "Dey say whit a smile"
 
     if fcoffeeworker == True:
+        show woman catcaffe pink smug
         coffeeworker "Hey handsome wana hang out after my shift?"
     else:
         coffeeworker "Hey cuti wana hang out afer my shift?"
@@ -193,9 +194,16 @@ label caffe_love_path_yes:
     scene bg catecoffe
 
     if fcoworker == True:
-        show woman catcaffe pink suprist
+        show woman catcaffe pink surprist
     elif fcoworker == False:
-        show male catcaffe blond suprist
+        show male catcaffe blond surprist
+
+    coffeeworker "Realy?"
+
+    if fcoworker == True:
+        show woman catcaffe pink passiv
+    elif fcoworker == False:
+        show male catcaffe blond eyesclosed
 
     coffeeworker "Whel se you after work then <3"
 
@@ -205,7 +213,7 @@ label caffe_love_path_no:
 
     scene bg catecoffe
 
-        if fcoworker == True:
+    if fcoworker == True:
         show woman catcaffe pink crying
     elif fcoworker == False:
         show male catcaffe blond sad
