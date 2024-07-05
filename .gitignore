@@ -2,4 +2,5 @@
 *.txt
 # Ignore the .vscode directory
 *.vscode/
-*.jason/
+# Ignore all .json files
+*.json
