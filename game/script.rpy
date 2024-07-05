@@ -157,31 +157,30 @@ label caffe_love_path:
         show woman catcaffe pink passiv
     elif fcoworker == False:
         show male catcaffe blond eyesclosed
-# ? Working on
 
-    coffeeworker "Thank you, and yes if corse"
+    coffeeworker: "Thank you, and yes of course."
 
-    "Dey nods and start prepering your coffee"
+    "Dey nod and start preparing your coffee."
 
-    player "How is it to working in a Cat caffe?"
+    Player: "How is it working in a cat café?"
 
-    "Dey turn instentli back to you"
+    "They turn instantly back to you."
 
-    coffeeworker "Its funn, i get to se cats all day, and after work i can play whid dem"
+    coffeeworker: "It's fun, I get to see cats all day, and after work I can play with them."
 
-    coffeeworker "Somtim its sad when som people adopt cats from her doh"
+    coffeeworker: "Sometimes it's sad when some people adopt cats from here though."
 
-    "Dey lok sad as dey sey so"
+    "They look sad as they say so."
 
-    player "ahh i se. whel atlis dey have a nice ant cute person her whit dem"
+    Player: "Ahh, I see. Well, at least they have a nice and cute person here with them."
 
-    "Dey say whit a smile"
+    "They say with a smile."
 
     if fcoffeeworker == True:
         show woman catcaffe pink smug
-        coffeeworker "Hey handsome wana hang out after my shift?"
+        coffeeworker: "Hey handsome, wanna hang out after my shift?"
     else:
-        coffeeworker "Hey cuti wana hang out afer my shift?"
+        coffeeworker "Hey cutie, wanna hang out after my shift?"
 
 menu:
     "Yes":
@@ -204,8 +203,9 @@ label caffe_love_path_yes:
         show woman catcaffe pink passiv
     elif fcoworker == False:
         show male catcaffe blond eyesclosed
+# ? Working on
 
-    coffeeworker "Whel se you after work then <3"
+    coffeeworker "Well, see you after work then <3"
 
     jump end
 
@@ -218,7 +218,7 @@ label caffe_love_path_no:
     elif fcoworker == False:
         show male catcaffe blond sad
 
-    coffeeworker "Ah i se, sorry for asking. It was cinda werd i gess and out of nowher hehe"
+    coffeeworker "Ah, I see. Sorry for asking. It was kinda weird, I guess, and out of nowhere hehe."
 
     jump end
 
