@@ -158,27 +158,27 @@ label caffe_love_path:
     elif fcoworker == False:
         show male catcaffe blond eyesclosed
 
-    coffeeworker: "Thank you, and yes of course."
+    coffeeworker "Thank you, and yes of course."
 
     "Dey nod and start preparing your coffee."
 
-    Player: "How is it working in a cat café?"
+    player "How is it working in a cat café?"
 
     "They turn instantly back to you."
 
-    coffeeworker: "It's fun, I get to see cats all day, and after work I can play with them."
+    coffeeworker "It's fun, I get to see cats all day, and after work I can play with them."
 
-    coffeeworker: "Sometimes it's sad when some people adopt cats from here though."
+    coffeeworker "Sometimes it's sad when some people adopt cats from here though."
 
     "They look sad as they say so."
 
-    Player: "Ahh, I see. Well, at least they have a nice and cute person here with them."
+    player "Ahh, I see. Well, at least they have a nice and cute person here with them."
 
     "They say with a smile."
 
     if fcoffeeworker == True:
         show woman catcaffe pink smug
-        coffeeworker: "Hey handsome, wanna hang out after my shift?"
+        coffeeworker "Hey handsome, wanna hang out after my shift?"
     else:
         coffeeworker "Hey cutie, wanna hang out after my shift?"
 
@@ -203,7 +203,6 @@ label caffe_love_path_yes:
         show woman catcaffe pink passiv
     elif fcoworker == False:
         show male catcaffe blond eyesclosed
-# ? Working on
 
     coffeeworker "Well, see you after work then <3"
 
