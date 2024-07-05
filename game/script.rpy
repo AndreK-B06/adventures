@@ -3,6 +3,8 @@
 
 define Grob = Character(_("Grob"), color="#63bb76")
 define Emma = Character(_("Emma"), color="#63bb76")
+define you = Character(_("You"), color="#70bcda")
+# coffee Worker
 define Daniel = Character(_("Daniel"), color="#c8ffc8")
 define Isabella = Character(_("Isabella"), color="#c8ffc8")
 # Office
@@ -13,7 +15,7 @@ label start:
 
     scene bg park
 
-    "You" "What was my name again?"
+    "YO! Player, what was my name?"
 
     $ player_name = renpy.input("What's your name?")
 
@@ -22,13 +24,14 @@ label start:
     if player_name == "":
         $ player_name = "John"
 
-    $ player = Character(player_name)
+    $ player = Character(player_name, color="#70bcda")
 
-    player "Right, it was %(player_name)s."
+    you "So it was %(player_name)s? ok"
 
-    "Do you prefer men or Men or women?"
+    "So player, do you prefer men or Men or women?"
 menu:
         "Women":
+            "Women? ok lets begin"
             $ coworker = Ava
             $ coffeeworker = Isabella
             $ fcoworker = True
@@ -36,6 +39,7 @@ menu:
             jump office
 
         "Men":
+            "Men? ok lets begin"
             $ coworker = Ethan
             $ coffeeworker = Daniel
             $ fcoworker = False
@@ -43,11 +47,14 @@ menu:
             jump office
 
         "Non":
+            "I dont hav this yet sorry"
             jump end
 
 label office:
 
     scene bg offis
+
+    "It's your first day on your new job as somebody approaches you."
 
     if fcoworker == True:
         show woman office brunet  passiv
@@ -56,31 +63,31 @@ label office:
 
     coworker "Are you lost?"
 
-    player "I am new here."
+    you "I am new here."
 
     coworker "New hire? Welcome aboard!"
 
-    player "Thanks. I'm still trying to find my way around."
+    you "Thanks. I'm still trying to find my way around."
 
     coworker "Understandable. This place can be a bit of a maze at first."
 
-    player "Any tips for a newcomer?"
+    you "Any tips for a newcomer?"
 
     coworker "Sure! First things first, the coffee machine in the break room is your best friend. Trust me."
 
-    player "Good to know. Anything else?"
+    you "Good to know. Anything else?"
 
     coworker "The boss loves punctuality, so always be on time for meetings. And don't hesitate to ask if you need help with anything."
 
-    player "I'll keep that in mind. Thanks for the advice."
+    you "I'll keep that in mind. Thanks for the advice."
 
     coworker "No problem. By the way, we have team lunches every Thursday. It's a great way to get to know everyone."
 
-    player "Sounds great! I'll be there."
+    you "Sounds great! I'll be there."
 
     coworker "Awesome. Well, I've got to get back to work, but it was nice meeting you, %(player_name)s."
 
-    player "Nice meeting you too, %(coworker)s."
+    you "Nice meeting you too, %(coworker)s."
 
     coworker "See you around the office!"
 
@@ -94,21 +101,21 @@ label street:
 
     "As you walk through the street after a long first day, your mind starts to wander."
 
-    player "Wat a day"
+    you "Wat a day"
 
     "you think to yourself."
 
-    player "I didn't expect my first day at the new job to be so exhausting. I could really use a break, something to take my mind off things."
+    you "I didn't expect my first day at the new job to be so exhausting. I could really use a break, something to take my mind off things."
 
     "You glance around, noticing the usual hustle and bustle of the city."
 
-    player "Maybe I should grab a coffee or a snack"
+    you "Maybe I should grab a coffee or a snack"
 
     "Just then, a colorful sign catches your eye: Café Purrfection Cat Café. A smile tugs at your lips."
 
-    player "A cat café, huh? That sounds interesting. I haven't been to one of those before."
+    you "A cat café, huh? That sounds interesting. I haven't been to one of those before."
 
-    player "Maybe some furry company is just what I need to unwind. Plus, I did always love cats. They're so calming."
+    you "Maybe some furry company is just what I need to unwind. Plus, I did always love cats. They're so calming."
 
 label caffe:
 
@@ -162,7 +169,7 @@ label caffe_love_path:
 
     "Dey nod and start preparing your coffee."
 
-    player "How is it working in a cat café?"
+    you "How is it working in a cat café?"
 
     "They turn instantly back to you."
 
@@ -172,7 +179,7 @@ label caffe_love_path:
 
     "They look sad as they say so."
 
-    player "Ahh, I see. Well, at least they have a nice and cute person here with them."
+    you "Ahh, I see. Well, at least they have a nice and cute person here with them."
 
     "They say with a smile."
 
