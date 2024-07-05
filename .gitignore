@@ -2,3 +2,4 @@
 *.txt
 # Ignore the .vscode directory
 *.vscode/
+*.jason/
