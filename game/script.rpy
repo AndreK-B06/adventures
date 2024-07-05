@@ -1,13 +1,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Grob = Character("Grob")
-define Emma = Character("Emma")
-define Daniel = Character("Daniel")
-define Isabella = Character("Isabella")
+define Grob = Character(_("Grob"), color="#63bb76")
+define Emma = Character(_("Emma"), color="#63bb76")
+define Daniel = Character(_("Daniel"), color="#c8ffc8")
+define Isabella = Character(_("Isabella"), color="#c8ffc8")
 # Office
-define Ava = Character("Ava")
-define Ethan = Character("Ethan")
+define Ava = Character(_("Ava"), color="#e2a85b")
+define Ethan = Character(_("Ethan"), color="#e2a85b")
 
 label start:
 
